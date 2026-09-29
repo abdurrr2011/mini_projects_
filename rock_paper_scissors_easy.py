@@ -1,4 +1,4 @@
-import random
+import random, sys
 
 amount_of_users_wins = 0
 amount_of_computers_wins = 0
@@ -41,3 +41,5 @@ while True:
     else:
         print('\nComputers WIN!\n')
         amount_of_computers_wins += 1
+
+sys.exit()

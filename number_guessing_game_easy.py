@@ -38,3 +38,5 @@ while True:
             print('WARNING:You were below the number\n')
 
 print(f"You got it in {guesses} guesses.")
+
+sys.exit()

@@ -46,3 +46,5 @@ else:
     
 print('You got' + str(score) + ' questions correct!')
 print(f"You got {score / 4 * 100}%")
+
+sys.exit()
