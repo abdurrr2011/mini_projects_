@@ -12,7 +12,7 @@ if playing.lower() != 'yes':
 print('Okay lets play :)')
 score = 0
 
-answer = input('What does CPU stand for?')
+answer: str = input('What does CPU stand for?')
 
 if answer.lower() == 'central processing unit':
     print('Correct!')
@@ -44,7 +44,7 @@ if answer.lower() == 'power supply':
 else:
     print('Incorrect!')
     
-print('You got' + str(score) + ' questions correct!')
+print('You got' + str(object=score) + ' questions correct!')
 print(f"You got {score / 4 * 100}%")
 
 sys.exit()

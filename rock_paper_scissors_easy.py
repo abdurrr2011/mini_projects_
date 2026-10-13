@@ -5,11 +5,11 @@ amount_of_computers_wins = 0
 total_of_matches = 0
 total_of_draws = 0
 
-condition = ['rock', 'paper', 'scissors']
-name_of_user = input('Could you please, type your name: ')
+condition: list[str] = ['rock', 'paper', 'scissors']
+name_of_user: str = input('Could you please, type your name: ')
 
 while True:
-    user_pick = input('Type Rock or Paper or Scissors or Q to quit: ').lower()
+    user_pick: str = input('Type Rock or Paper or Scissors or Q to quit: ').lower()
     
     if user_pick == 'q':
         print(f"\nAs a result of the game:")
@@ -24,8 +24,8 @@ while True:
         continue
 
     total_of_matches += 1
-    random_number = random.randint(0, 2)
-    computer_pick = condition[random_number]
+    random_number: int = random.randint(0, 2)
+    computer_pick: str = condition[random_number]
     print(f"Computer picked {computer_pick}.")
 
     if user_pick == computer_pick:

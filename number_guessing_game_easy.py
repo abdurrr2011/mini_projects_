@@ -15,7 +15,7 @@ else:
     print('Please type a number next time.')
     sys.exit()
     
-random_number = random.randrange(1, top_of)
+random_number: int = random.randrange(start=1, stop=top_of)
 guesses = 0
 
 while True:

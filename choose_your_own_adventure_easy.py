@@ -1,10 +1,10 @@
 import sys
 
 
-name = input('Type your name: ')
+name: str = input('Type your name: ')
 print(f"Welcome {name} to this game.")
 
-answer = input('You are on a dirt road, it has come to an end and you can go left or right. Which way would you like to go? ').lower()
+answer: str = input('You are on a dirt road, it has come to an end and you can go left or right. Which way would you like to go? ').lower()
 
 if answer == 'left':
     answer = input('You come to a river, and you can walk around it or swim across? Type "walk" tp walk around and "swim" to swim across: ').lower()
